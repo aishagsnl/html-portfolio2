@@ -1,0 +1,188 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--background-1), var(--background-2));
+  height: auto;
+  color: #3c1208;
+  overflow-x: hidden;
+
+}
+
+hr {
+  height: 3px;
+  background-color: var(--background-1);
+  border-color: var(--background-1);
+  border: 0;
+  width: 300px;
+}
+
+h1, h2 {
+  color: var(--text);
+  font-weight: lighter;
+  font-size: 3.5rem; 
+  font-family: "Italiana", serif;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+p {
+  margin: auto;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  max-width: 900px;
+  font-size: 2rem;
+}
+
+a {
+  font-family: "Italiana", serif;
+  color: var(--text);
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-2);
+}
+
+.text {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(34, 33, 33, 60%);
+  color: var(--text-2);
+  padding: 30px 80px;
+  max-width: 2000px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
+}
+
+select, textarea {
+  display: block;
+  background-color: rgba(34, 33, 33, 60%);
+  color: var(--text);
+  margin: 0 auto;
+  font-size: large;
+  width: 300px;
+  cursor: pointer;
+}
+
+.down {
+  height: 3px;
+  background-color: var(--background-1);
+  border-color: var(--background-1);
+  border: 0;
+  width: 1500px;
+}
+
+img {
+  display: block;
+  object-position: center;
+}
+
+#image {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#img-caption {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+#img-div {
+  background-color: var(--text);
+  padding-top: 20px;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #daac8e;
+  --text-2: #d5b49e;
+  --background-1: #c08f71;
+  --background-2: #3c1208;
+  --nav-color: #3c1208;
+}
+
+header {
+  background-color: var(--nav-color);
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 80px; 
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--text-2);
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  background-color: var(--text-2);
+  color: var(--background-2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+footer a:hover {
+  background-color: var(--text);
+}
